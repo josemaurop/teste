@@ -26,45 +26,62 @@
       padding: 32px 16px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      text-align: left;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
     }
 
     .title {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 700;
-      margin-bottom: 16px;
       text-align: center;
+      margin-bottom: 16px;
     }
 
     .subtitle {
       font-size: 1.2rem;
       font-weight: 500;
-      margin-bottom: 24px;
       text-align: center;
+      margin-bottom: 24px;
+      color: #666;
+    }
+
+    .recipe-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-bottom: 24px;
     }
 
     .section-title {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 600;
-      margin-top: 24px;
-      margin-bottom: 12px;
+      margin: 24px 0 12px;
+      text-align: left;
+      width: 100%;
     }
 
     ul {
       margin-left: 20px;
       margin-bottom: 24px;
+      width: 100%;
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .instructions {
-      font-size: 1rem;
+    .instructions p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .extra-info {
+      margin-top: 24px;
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       line-height: 1.6;
     }
 
@@ -102,27 +119,36 @@
 <body>
   <div class="main-content">
     <h1 class="title">Simple Guacamole Recipe</h1>
-    <h2 class="subtitle">A fresh and tasty homemade dip!</h2>
+    <p class="subtitle">A traditional Mexican dip made with fresh avocados</p>
 
-    <h3 class="section-title">Ingredients:</h3>
+    <img src="https://cdn.pixabay.com/photo/2020/01/30/15/54/guacamole-4807770_960_720.jpg" alt="Guacamole Bowl" class="recipe-image">
+
+    <h2 class="section-title">Ingredients:</h2>
     <ul>
       <li>2 ripe avocados</li>
-      <li>1 small lime (juiced)</li>
-      <li>1 small tomato (diced)</li>
-      <li>1/4 small red onion (finely chopped)</li>
-      <li>1 tablespoon chopped cilantro (optional)</li>
+      <li>1 lime, juiced</li>
+      <li>1 small tomato, diced</li>
+      <li>1/4 red onion, finely chopped</li>
+      <li>1 tbsp chopped cilantro (optional)</li>
       <li>Salt to taste</li>
-      <li>1 small jalapeño (optional, finely chopped)</li>
+      <li>1 jalapeño, finely chopped (optional)</li>
     </ul>
 
-    <h3 class="section-title">Instructions:</h3>
+    <h2 class="section-title">Instructions:</h2>
     <div class="instructions">
       <p>1. Cut the avocados in half, remove the seeds, and scoop the flesh into a bowl.</p>
-      <p>2. Use a fork to mash the avocados to your desired consistency — chunky or smooth.</p>
-      <p>3. Add the lime juice and salt. Mix well.</p>
-      <p>4. Stir in the diced tomato, onion, cilantro, and jalapeño if using.</p>
-      <p>5. Taste and adjust seasoning with more lime or salt if needed.</p>
-      <p>6. Serve immediately with tortilla chips, toast, or as a topping for tacos or grilled meats.</p>
+      <p>2. Mash with a fork to your preferred texture — smooth or chunky.</p>
+      <p>3. Add lime juice and salt, mixing gently.</p>
+      <p>4. Stir in chopped onion, tomato, cilantro, and jalapeño.</p>
+      <p>5. Taste and adjust seasonings. Serve immediately.</p>
+    </div>
+
+    <img src="https://cdn.pixabay.com/photo/2018/03/07/20/53/avocado-3205643_960_720.jpg" alt="Avocados and ingredients" class="recipe-image">
+
+    <div class="extra-info">
+      <h2 class="section-title">Why Guacamole?</h2>
+      <p>Guacamole is one of the most iconic dishes in Mexican cuisine. It’s naturally healthy, vegan-friendly, and incredibly versatile — perfect with tacos, on toast, or as a dip for veggies and chips.</p>
+      <p>Fun fact: The name "guacamole" comes from the Aztec word *ahuacamolli*, meaning "avocado sauce."</p>
     </div>
   </div>
 
